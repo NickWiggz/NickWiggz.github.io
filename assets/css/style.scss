@@ -1,0 +1,22 @@
+---
+---
+
+@import "{{ site.theme }}";
+.hero {
+    background-image: url("path/to/your/background.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 0;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-top: 0;
+}
