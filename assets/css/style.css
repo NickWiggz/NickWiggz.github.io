@@ -2,25 +2,193 @@
 ---
 
 @import "{{ site.theme }}";
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    font-family: 'Roboto', sans-serif; /* Using Roboto font like Tianna */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light gray background */
+    color: #333;
 }
 
+.container {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 60px 0; /* More padding */
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-weight: 500; /* Medium font weight */
+}
+
+h2 {
+    margin-bottom: 30px; /* More space below h2 */
+}
+
+/* Navigation */
+nav {
+    background-color: transparent;
+    padding: 20px 0;
+    position: absolute; /* Position the nav above the hero */
+    width: 100%;
+    z-index: 10; /* Ensure nav stays on top */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff; /* White text for links */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: color 0.2s; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #ddd; /* Slightly lighter color on hover */
+}
+
+/* Hero Section */
 .hero {
-    background: url('background.jpg') no-repeat center center/cover;
-    color: white;
-    padding: 100px 0;
+    background: url('images/placeholder.png') no-repeat center center; /* Replace with your background image */
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 180px 0; /* More padding */
+    position: relative; /* For positioning pseudo-elements */
 }
 
-h1 {
-    font-size: 3rem;
+/* Overlay - Add a dark overlay to the hero image */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust opacity as needed */
+    z-index: 1;
 }
 
-.card {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.hero > .container {
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 2;
 }
 
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    font-weight: 700; /* Bolder font weight */
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    font-weight: 400; /* Lighter font weight */
+}
+
+.resume-button {
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px; /* Rounded button */
+    border: 2px solid #fff;
+    transition: all 0.2s; /* Smooth transition for hover effect */
+}
+
+.resume-button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* About Section */
+.about {
+    text-align: center; /* Center align content in this section */
+}
+
+.profile-pic {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px;
+}
+
+.project {
+    background-color: #fff;
+    border: none; /* Remove borders */
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); /* Add a subtle shadow */
+    transition: transform 0.2s; /* Smooth transform on hover */
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Lift the project card on hover */
+}
+
+/* Placeholder for project icons */
+.project i {
+    font-size: 48px;
+    color: #007bff; /* Or your preferred color */
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    margin-top: 0;
+    font-weight: 600; /* Slightly bolder font for project titles */
+}
+
+.project p {
+    margin-bottom: 20px;
+    line-height: 1.5; /* Improve readability */
+}
+
+.project a {
+    display: inline-block;
+    margin: 0 8px;
+    color: #007bff; /* Or your preferred link color */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center; /* Center align content in this section */
+}
+
+/* Footer */
 footer {
-    margin-top: 20px;
+    background-color: #282828; /* Darker footer */
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
 }
