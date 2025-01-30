@@ -3,7 +3,6 @@
 
 @import "{{ site.theme }}";
 /* General Styles */
-/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -34,7 +33,7 @@ h2 {
 /* Navigation */
 nav {
     background-color: transparent;
-    padding: 20px 0;
+    padding: 30px 0;
     position: absolute;
     width: 100%;
     z-index: 10;
@@ -44,6 +43,8 @@ nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav li {
@@ -69,7 +70,7 @@ nav a:hover {
     background-size: cover;
     color: #fff;
     text-align: center;
-    padding: 180px 0;
+    padding: 220px 0;
     position: relative;
 }
 
@@ -80,7 +81,7 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(3, 3, 3, 0.85);
     z-index: 1;
 }
 
@@ -135,7 +136,8 @@ nav a:hover {
 .tech-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+    gap: 30px;
+    margin-top: 60px
 }
 
 .tech-tile {
@@ -169,17 +171,17 @@ nav a:hover {
 
 /* Colors for Tiles */
 .tech-tile[data-tech="r"] {
-    background-color: #276DC3;
+    background-color: #0D47A1;
     color: white;
 }
 
 .tech-tile[data-tech="python"] {
-    background-color: #FFD43B;
+    background-color: #00008B;
     color: white;
 }
 
 .tech-tile[data-tech="tableau"] {
-    background-color: #E97627;
+    background-color: #008ECC;
     color: white;
 }
 
@@ -213,7 +215,6 @@ nav a:hover {
     margin-top: 0;
     font-weight: 600;
 }
-/* ... previous CSS ... */
 
 .project p {
     margin-bottom: 20px;
