@@ -2,95 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nick Wiggins - Data Analyst</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Wiggins - Data Analytics Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav>
         <div class="container">
-            <a class="navbar-brand" href="#">Nick Wiggins</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero text-center">
+    <header class="hero">
         <div class="container">
-            <h1>Nick Wiggins</h1>
-            <p>Data Analyst | Visualization | Predictive Modeling</p>
+            <h1>Nicholas Wiggins</h1>
+            <h2>Data Analyst</h2>
+            <a href="#resume" class="resume-button">View Resume</a>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="container text-center my-5">
-        <h2>About Me</h2>
-        <p>Passionate data analyst specializing in data visualization, predictive analytics, and process optimization.</p>
+    <section id="about" class="section about">
+        <div class="container">
+            <img src="images/nicholaswiggins.jpg" alt="Nicholas Wiggins" class="profile-pic">
+            <h2>About Me</h2>
+            <p>Hello!👋 Welcome to my page. My name is **Nicholas Wiggins**, and I believe that data holds the key to unlocking insights and driving positive change. My journey into the world of data began over a decade ago, leading me through roles in acquisition and procurement, and ultimately culminating in a deep dive into data analytics. With a Master's in Data Analytics and Policy from Johns Hopkins University, I've developed a strong foundation in statistical analysis, predictive modeling, and data visualization.</p>
+            <p>Throughout my career, I've had the opportunity to work with organizations like the Department of Defense and CISA, where I leveraged tools like R, Python, Tableau, Looker, and Mapbox to analyze complex datasets, build predictive models, and communicate findings effectively. I'm particularly proud of the projects featured in this portfolio, which demonstrate my ability to tackle real-world problems using data-driven approaches.</p>
+            <p>When I'm not immersed in data, I'm passionate about personal and professional growth. I love to travel, experience new cultures, and constantly seek out opportunities to learn and expand my horizons. Whether it's mastering a new programming language or exploring a new country, I'm always eager to challenge myself and embrace new experiences.</p>
+            <ul>
+                <li>🔭 Recently completed my M.S in Data Analytics and Policy.</li>
+                <li>🌱 I’m currently furthering my learning in SAS programming and Python</li>
+                <li>👯 I’m looking to collaborate on projects involving R and Python to build my skill level.</li>
+                <li>😄 Pronouns: He/Him</li>
+                <li>⚡ Fun fact: I've worked as an Avionics Technician on UH-1Y and AH-1Z helicopters while serving in the Marine Corps.</li>
+            </ul>
+        </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="container my-5">
-        <h2 class="text-center">Portfolio</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="project1.jpg" class="card-img-top" alt="Project 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 1</h5>
-                        <p class="card-text">Analyzed contract data using R and Looker for strategic acquisition decisions.</p>
-                        <a href="#" class="btn btn-primary">View Project</a>
+    <section id="resume" class="section">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>Download my full resume <a href="path/to/your/resume.pdf" target="_blank">here</a>.</p> <br>
+            <h3>Skills</h3>
+            <ul>
+                <li><b>Programming Languages:</b> R, Python, SQL</li>
+                <li><b>Data Analysis Tools:</b> Excel, Access, Google Scripts, SAS, @RISK</li>
+                <li><b>Data Visualization:</b> Tableau, R (ggplot2), Looker, Mapbox</li>
+                <li><b>Machine Learning:</b> Supervised/Unsupervised Learning, Regression, Classification</li>
+                <li><b>Statistical Analysis:</b> Hypothesis Testing, Regression Modeling, Time Series Analysis, Causal Inference</li>
+                <li><b>Cloud Computing:</b> AWS (Serverless Computing, Database Management, Cloud Security), Google Cloud</li>
+                <li><b>ERP Systems:</b> Oracle, Microsoft Dynamics, SAP</li>
+                <li><b>Other:</b> Predictive Modeling, Risk Management, Process Optimization, Project Management, FAR/DFARS, Budget Management, Lean Six Sigma (Yellow Belt)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <i class="fas fa-chart-line"></i>                    
+                    <div class="project-content">
+                        <h3>The Impact of Social Media on Mental Health in Teens (R)</h3>
+                        <p>Investigated the correlation between social media usage and mental health indicators among teenagers.</p>
+                        <a href="https://github.com/NickWiggz/Projects/blob/main/Social%20Media%20and%20Teens.Rmd">GitHub</a>
+                        <a href="https://rpubs.com/njwiggins/1266054">Rpubs</a>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="project2.jpg" class="card-img-top" alt="Project 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 2</h5>
-                        <p class="card-text">Developed interactive Tableau dashboards for financial reporting.</p>
-                        <a href="#" class="btn btn-primary">View Project</a>
+                <div class="project">
+                    <i class="fas fa-smoking"></i>                    
+                    <div class="project-content">
+                        <h3>The Gateway Effect of Smokeless Tobacco on High School Adolescents (R)</h3>
+                        <p>Examined whether the use of smokeless tobacco products serves as a predictor for future cigarette smoking among high school students.</p>
+                        <a href="https://github.com/NickWiggz/Projects/blob/main/Smokeless%20Tobacco%20and%20High%20School%20Adolescents.Rmd">GitHub</a>
+                        <a href="https://github.com/NickWiggz/Projects/blob/main/Smokeless%20Tobacco%20and%20High%20School%20Adolescents.pdf">PDF Report</a>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="project3.jpg" class="card-img-top" alt="Project 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 3</h5>
-                        <p class="card-text">Built a Python-based predictive model for budget forecasting.</p>
-                        <a href="#" class="btn btn-primary">View Project</a>
+                <div class="project">
+                    <i class="fas fa-house-damage"></i>                    
+                    <div class="project-content">
+                        <h3>Addressing Homelessness in Washington, DC (R, Shiny, Mapbox)</h3>
+                        <p>Analyzed socioeconomic and environmental factors contributing to homelessness in Washington, DC.</p>
+                        <a href="https://github.com/NickWiggz/Projects/blob/main/Addressing%20DC%20Homelessness.Rmd">GitHub</a>
+                        <a href="https://q1tmzx-nicholas-wiggins.shinyapps.io/Addressing_DC_Homelessness/">Shiny App</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <i class="fas fa-columns"></i>
+                    <div class="project-content">
+                        <h3>FlexDashboard | Addressing Homelessness in Washington, DC (R, Flexdashboard)</h3>
+                        <p>Created a comprehensive dashboard that presents key metrics and visualizations related to homelessness in Washington, DC.</p>
+                        <a href="https://github.com/NickWiggz/Projects/blob/main/Homeless_Final_FlexDash.rmd">GitHub</a>
+                        <a href="https://q1tmzx-nicholas-wiggins.shinyapps.io/DC_Homelessness_Final/">Flexdashboard</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <i class="fas fa-newspaper"></i>                    
+                    <div class="project-content">
+                        <h3>Media Narratives, Veteran Homelessness, and Public Perception (R)</h3>
+                        <p>Assessed how media narratives shape public perception of veteran homelessness.</p>
+                        <a href="https://github.com/NickWiggz/Projects/blob/main/Media%20Narratives%2C%20Veteran%20Homelessness%2C%20and%20Public%20Perception.qmd">GitHub</a>
+                        <a href="https://github.com/NickWiggz/Projects/blob/main/Media%20Narratives%2C%20Veteran%20Homelessness%2C%20and%20Public%20Perception.pdf">PDF Report</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <i class="fas fa-chart-bar"></i>
+                    <div class="project-content">
+                        <h3>US Police Involved Shootings (2015-2023) (R, Shiny)</h3>
+                        <p>Analyzed and visualized data on police-involved shootings in the US from 2015 to 2023.</p>
+                        <a href="https://github.com/NickWiggz/Projects/blob/main/Data%20Viz%20Police%20Shootings%20Portfolio.Rmd">GitHub</a>
+                        <a href="https://q1tmzx-nicholas-wiggins.shinyapps.io/Portfolio/">Shiny App</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container text-center my-5">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">Your LinkedIn</a></p>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>
+                Feel free to reach out to me through the following channels:
+            </p>
+            <ul>
+                <li>Email: <a href="mailto:NickWiggz1@gmail.com">NickWiggz1@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/nickwiggz">https://www.linkedin.com/in/nickwiggz</a></li>
+                <li>Twitter: <a href="https://twitter.com/NickWiggz">@NickWiggz</a></li>
+                <li>Instagram: <a href="https://www.instagram.com/nickwiggz/">@nickwiggz</a></li>
+            </ul>
+        </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="text-center bg-dark text-light py-3">
-        <p>© 2025 Nick Wiggins</p>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nicholas Wiggins | <a href="https://github.com/NickWiggz/Data-Analytics-Portfolio">GitHub Portfolio</a></p>
+        </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="assets/js/script.js"></script> </body>
 </html>
