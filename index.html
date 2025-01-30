@@ -1,63 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<nav>
-    <div class="container">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicholas Wiggins - Data Analytics Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nick Wiggins - Data Analyst</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <h1>Nicholas Wiggins</h1>
-            <h2>Data Analyst</h2>
-            <a href="#resume" class="resume-button">View Resume</a>
+            <a class="navbar-brand" href="#">Nick Wiggins</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-center">
+        <div class="container">
+            <h1>Nick Wiggins</h1>
+            <p>Data Analyst | Visualization | Predictive Modeling</p>
         </div>
     </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <img src="images/nicholaswiggins.jpg" alt="Nicholas Wiggins" class="profile-pic">
-            <h2>About Me</h2>
-            </div>
+    <!-- About Section -->
+    <section id="about" class="container text-center my-5">
+        <h2>About Me</h2>
+        <p>Passionate data analyst specializing in data visualization, predictive analytics, and process optimization.</p>
     </section>
 
-    <section id="resume" class="section">
-        <div class="container">
-            <h2>Resume</h2>
-            </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container my-5">
+        <h2 class="text-center">Portfolio</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Analyzed contract data using R and Looker for strategic acquisition decisions.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
                 </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
             </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Developed interactive Tableau dashboards for financial reporting.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="project3.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Built a Python-based predictive model for budget forecasting.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Nicholas Wiggins</p>
-        </div>
+    <!-- Contact Section -->
+    <section id="contact" class="container text-center my-5">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">Your LinkedIn</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center bg-dark text-light py-3">
+        <p>© 2025 Nick Wiggins</p>
     </footer>
 
-    <script src="assets/js/script.js"></script> </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
