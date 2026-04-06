@@ -1,29 +1,25 @@
-// Set the current year dynamically in the footer
-document.addEventListener("DOMContentLoaded", () => {
-    const yearSpan = document.getElementById("year");
-    if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-    }
-});
+document.addEventListener('DOMContentLoaded', function() {
+    const techTiles = document.querySelectorAll('.tech-tile');
+    const projectsSections = document.querySelectorAll('.projects-section');
 
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        
-        if (targetElement) {
-            // Calculate offset to account for the fixed navbar
-            const headerOffset = 70;
-            const elementPosition = targetElement.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-  
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: "smooth"
+    techTiles.forEach(tile => {
+        tile.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            const tech = this.dataset.tech;
+
+            // Hide all project sections
+            projectsSections.forEach(section => {
+                section.style.display = 'none';
             });
-        }
+
+            // Show the selected project section
+            const selectedSection = document.getElementById(`${tech}-projects`);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+
+            // Scroll to the projects section
+            document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+        });
     });
 });
