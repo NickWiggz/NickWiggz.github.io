@@ -3,94 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Data Science Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Data Analytics & Continuous Improvement Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#technologies">Technologies</a></li>
+    <nav id="navbar">
+        <div class="nav-content">
+            <h1 class="logo">Portfolio</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#methodology">Methodology</a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+
+    <header id="hero">
+        <div class="hero-content">
+            <h2>Data Analytics & Continuous Improvement</h2>
+            <p>Bridging the gap between raw data, operational efficiency, and actionable public policy.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
     </header>
 
-    <!-- Technologies Section -->
-    <section id="technologies" class="section">
-        <div class="container">
-            <h2>Technologies</h2>
-            <div class="tech-grid">
-                <a href="#r-projects" class="tech-tile r-tile">
-                    <i class="fab fa-r-project"></i>
-                    <h3>R</h3>
-                </a>
-                <a href="#python-projects" class="tech-tile python-tile">
-                    <i class="fab fa-python"></i>
-                    <h3>Python</h3>
-                </a>
-                <a href="#tableau-projects" class="tech-tile tableau-tile">
-                    <i class="fas fa-chart-bar"></i>
-                    <h3>Tableau</h3>
-                </a>
-            </div>
+    <section id="about" class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-text">
+            <p>I am a Data Analytics and Continuous Improvement professional specializing in bridging the gap between raw data and actionable public policy. I leverage tools like R, SQL, Tableau, and Power BI to build predictive models, design interactive dashboards, and re-engineer mission-critical workflows.</p>
+            <p>Whether I am analyzing large-scale demographic datasets for civic tech initiatives or developing KPI tracking tools to optimize organizational efficiency, my focus is always on creating structured, data-driven solutions to complex problems.</p>
         </div>
     </section>
 
-    <!-- R Projects -->
-    <section id="r-projects" class="section">
-        <div class="container">
-            <h2>R Projects</h2>
-            <div class="projects-grid">
-                <div class="project">
-                    <img src="images/social-media-mental-health.jpg" alt="Social Media and Mental Health">
-                    <div class="project-content">
-                        <h3>The Impact of Social Media on Mental Health in Teens</h3>
-                        <p>Investigated the correlation between social media usage and mental health indicators among teenagers.</p>
-                        <a href="https://github.com/NickWiggz/Projects/blob/main/Social%20Media%20and%20Teens.Rmd" target="_blank">GitHub</a>
-                        <a href="https://rpubs.com/njwiggins/1266054" target="_blank">Rpubs</a>
-                    </div>
+    <section id="resume" class="container bg-light">
+        <h2 class="section-title">Resume & Skills</h2>
+        <div class="resume-grid">
+            <div class="resume-card">
+                <h3>Education</h3>
+                <ul>
+                    <li><strong>M.S. Data Analytics and Policy</strong></li>
+                    <li><strong>Master of Business Administration (MBA)</strong></li>
+                    <li><strong>Google Data Analytics Certificate</strong></li>
+                </ul>
+            </div>
+            <div class="resume-card">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li><strong>Languages:</strong> R, SQL, Python, Excel VBA</li>
+                    <li><strong>Visualization:</strong> Power BI, Tableau, Shiny Apps, Google Data Studio</li>
+                    <li><strong>Automation:</strong> Power Query, Power Automate, ServiceNow</li>
+                </ul>
+            </div>
+            <div class="resume-card">
+                <h3>Core Competencies</h3>
+                <ul>
+                    <li>Continuous Improvement</li>
+                    <li>Predictive Modeling</li>
+                    <li>Quantitative Research</li>
+                    <li>Civic Tech & Policy Analysis</li>
+                    <li>Workflow Re-engineering</li>
+                </ul>
+            </div>
+        </div>
+        <div class="resume-download">
+            <a href="#" class="btn btn-outline" target="_blank">Download Full Resume (PDF)</a>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Operational Workflow & KPI Dashboard</h3>
+                    <p class="project-tags"><span>Power Automate</span><span>ServiceNow</span><span>Power BI</span></p>
+                    <p>Re-engineered mission support workflows by developing automated intake forms and a comprehensive financial/operational KPI tracking tool.</p>
+                    <a href="https://github.com/yourusername/project1" target="_blank" class="project-link">View Repository &rarr;</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Civic Tech & Smart City Indicators</h3>
+                    <p class="project-tags"><span>R Markdown</span><span>APIs</span><span>Shiny App</span></p>
+                    <p>Compiled smart city indicator data via APIs and built an interactive Shiny app to model housing affordability and the unintended consequences of policy changes.</p>
+                    <a href="https://github.com/yourusername/project2" target="_blank" class="project-link">View Repository &rarr;</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Quantitative Demographic Analysis</h3>
+                    <p class="project-tags"><span>SQL</span><span>R</span><span>NSDUH/YRBSS Datasets</span></p>
+                    <p>Structured and filtered large-scale public health datasets to analyze behavioral trends in specific youth demographics, supporting a formal policy position statement.</p>
+                    <a href="https://github.com/yourusername/project3" target="_blank" class="project-link">View Repository &rarr;</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Python Projects -->
-    <section id="python-projects" class="section">
-        <div class="container">
-            <h2>Python Projects</h2>
-            <div class="projects-grid">
-                <div class="project">
-                    <img src="images/sentiment-analysis.jpg" alt="Sentiment Analysis">
-                    <div class="project-content">
-                        <h3>Sentiment Analysis of Product Reviews</h3>
-                        <p>Performed sentiment analysis on Amazon product reviews using NLP techniques in Python.</p>
-                        <a href="https://github.com/NickWiggz/sentiment-analysis" target="_blank">GitHub</a>
-                    </div>
-                </div>
+    <section id="methodology" class="container bg-light">
+        <h2 class="section-title">My Methodology</h2>
+        <div class="methodology-steps">
+            <div class="step">
+                <h4>1. Identify the Bottleneck</h4>
+                <p>Define the operational inefficiency or policy gap through stakeholder interviews and initial system analysis.</p>
+            </div>
+            <div class="step">
+                <h4>2. Data Collection & Structuring</h4>
+                <p>Extract, transform, and load (ETL) quantitative data from disparate sources, ensuring data integrity and demographic precision.</p>
+            </div>
+            <div class="step">
+                <h4>3. Modeling & Visualization</h4>
+                <p>Apply predictive analytics and build intuitive dashboards (Tableau/Power BI/Shiny) to make complex data accessible to non-technical leaders.</p>
+            </div>
+            <div class="step">
+                <h4>4. Implement & Iterate</h4>
+                <p>Deploy the solution, monitor Results-Based Accountability metrics, and continuously refine the workflow based on user feedback.</p>
             </div>
         </div>
     </section>
 
-    <!-- Tableau Projects -->
-    <section id="tableau-projects" class="section">
-        <div class="container">
-            <h2>Tableau Projects</h2>
-            <div class="projects-grid">
-                <div class="project">
-                    <img src="images/housing-analysis.jpg" alt="Housing Market Analysis">
-                    <div class="project-content">
-                        <h3>US Housing Market Analysis</h3>
-                        <p>Created interactive Tableau dashboards to analyze trends in the US housing market.</p>
-                        <a href="https://public.tableau.com/views/housing-market-analysis" target="_blank">Tableau</a>
-                    </div>
-                </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Data Analytics Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                <a href="mailto:your.email@example.com">Email Me</a>
             </div>
         </div>
-    </section>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
