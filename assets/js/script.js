@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     techTiles.forEach(tile => {
         tile.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default link behavior
+            event.preventDefault(); 
             const tech = this.dataset.tech;
 
             // Hide all project sections
@@ -18,8 +18,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 selectedSection.style.display = 'block';
             }
 
-            // Scroll to the projects section
-            document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+            // Scroll to the projects section, offset slightly for the fixed nav bar
+            const projectsHeader = document.getElementById('projects');
+            const headerOffset = 80; 
+            const elementPosition = projectsHeader.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+  
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
         });
     });
 });
