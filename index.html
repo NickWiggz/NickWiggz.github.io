@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicholas Wiggins - Data Analytics & CI Portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <nav>
-        <div class="container">
+        <div class="container nav-container">
+            <div class="logo">Nicholas Wiggins</div>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#resume">Resume</a></li>
-                <li><a href="#technologies">Technologies</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#technologies">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -29,43 +29,64 @@
         </div>
     </header>
 
-    <section id="about" class="section about">
+    <section id="about" class="section">
         <div class="container">
-            <img src="images/nicholaswiggins.jpg" alt="Nicholas Wiggins" class="profile-pic">
             <h2>About Me</h2>
-            <p>Hello!👋 Welcome to my page. My name is **Nicholas Wiggins**, and I specialize in bridging the gap between raw data, operational efficiency, and actionable public policy. My journey into the world of data began over a decade ago in the Marine Corps, leading me through roles in acquisition and procurement, and ultimately driving my current focus on continuous improvement and data analytics.</p>
-            <p>With a Master's in Data Analytics and Policy from Johns Hopkins University and an MBA, I've developed a strong foundation in statistical analysis, predictive modeling, and workflow re-engineering. Throughout my career, I've had the opportunity to work with organizations like the Department of Defense and CISA, where I leverage tools like R, Python, Tableau, and Power Automate to analyze complex datasets, build KPI tracking tools, and re-engineer mission-critical workflows.</p>
-            <p>When I'm not immersed in data and process optimization, I'm passionate about personal growth. I love to travel, experience new cultures, and constantly seek out opportunities to learn—whether that's mastering a new programming language or exploring a new country.</p>
-            <ul style="text-align: left; max-width: 600px; margin: 0 auto; list-style-position: inside;">
-                <li>🔭 Recently completed my M.S in Data Analytics and Policy.</li>
-                <li>🌱 I’m currently furthering my learning in Python, SAS, and civic tech frameworks.</li>
-                <li>👯 I’m looking to collaborate on projects involving R, Python, and operational automation.</li>
-                <li>😄 Pronouns: He/Him</li>
-                <li>⚡ Fun fact: I worked as an Avionics Technician on UH-1Y and AH-1Z helicopters while serving in the USMC.</li>
-            </ul>
+            <img src="images/nicholaswiggins.jpg" alt="Nicholas Wiggins" class="profile-pic">
+            
+            <div class="about-text">
+                <p>I am a Data Analytics and Continuous Improvement professional specializing in bridging the gap between raw data, operational efficiency, and actionable public policy.</p>
+                <p>With a Master of Science in Data Analytics and Policy from Johns Hopkins University, an MBA, and a foundational career as an Avionics Technician in the United States Marine Corps, I bring a unique blend of analytical rigor and disciplined execution to every initiative.</p>
+                <p>Currently, I leverage tools like R, Python, SQL, Tableau, and Power Automate to re-engineer mission-critical workflows and develop predictive models for the Department of Defense. I am deeply passionate about civic tech, quantitative research, and transforming complex demographic datasets into intuitive, interactive dashboards that empower leadership to make strategic, data-driven decisions.</p>
+            </div>
         </div>
     </section>
 
-    <section id="resume" class="section">
+    <section id="resume" class="section bg-light">
         <div class="container">
-            <h2>Resume</h2>
-            <p>Download my full resume <a href="path/to/your/resume.pdf" target="_blank">here</a>.</p> <br>
-            <h3>Skills & Core Competencies</h3>
-            <ul style="text-align: left; max-width: 650px; margin: 0 auto; line-height: 1.8;">
-                <li><b>Programming Languages:</b> R, Python, SQL, Excel VBA</li>
-                <li><b>Data Analysis & BI:</b> Tableau, Power BI, Looker, Excel, SAS, Mapbox</li>
-                <li><b>Automation & Operations:</b> Power Automate, ServiceNow, Power Query, Continuous Improvement, Workflow Re-engineering</li>
-                <li><b>Machine Learning:</b> Supervised/Unsupervised Learning, Regression, Classification</li>
-                <li><b>Statistical Analysis:</b> Hypothesis Testing, Time Series Analysis, Causal Inference, Quantitative Research</li>
-                <li><b>Cloud & ERP Systems:</b> AWS, Google Cloud, Oracle, Microsoft Dynamics, SAP</li>
-                <li><b>Other:</b> Public Policy Analysis, Lean Six Sigma (Yellow Belt), Predictive Modeling, FAR/DFARS</li>
-            </ul>
+            <h2>Resume & Qualifications</h2>
+            <div class="resume-grid">
+                <div class="resume-card">
+                    <i class="fas fa-graduation-cap resume-icon"></i>
+                    <h3>Education</h3>
+                    <ul>
+                        <li><strong>M.S. Data Analytics and Policy</strong><br>Johns Hopkins University</li>
+                        <li><strong>Master of Business Administration</strong><br>American InterContinental University</li>
+                        <li><strong>B.B.A. in Accounting</strong><br>American InterContinental University</li>
+                    </ul>
+                </div>
+                <div class="resume-card">
+                    <i class="fas fa-chart-line resume-icon"></i>
+                    <h3>Core Competencies</h3>
+                    <ul>
+                        <li>Continuous Improvement</li>
+                        <li>Predictive Modeling</li>
+                        <li>Quantitative Research</li>
+                        <li>Workflow Re-engineering</li>
+                        <li>Lean Six Sigma (Yellow Belt)</li>
+                    </ul>
+                </div>
+                <div class="resume-card">
+                    <i class="fas fa-laptop-code resume-icon"></i>
+                    <h3>Technical Stack</h3>
+                    <ul>
+                        <li><strong>Languages:</strong> R, Python, SQL, VBA</li>
+                        <li><strong>BI & Viz:</strong> Tableau, Power BI, Shiny</li>
+                        <li><strong>Automation:</strong> Power Automate, ServiceNow</li>
+                        <li><strong>Cloud/ERP:</strong> AWS, Google Cloud, SAP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 30px;">
+                <a href="path/to/your/resume.pdf" target="_blank" class="btn-primary">Download Full Resume (PDF)</a>
+            </div>
         </div>
     </section>
 
     <section id="technologies" class="section">
         <div class="container">
-            <h2>Technologies</h2>
+            <h2>Technical Portfolio</h2>
+            <p class="text-center" style="margin-bottom: 40px; color: #64748b;">Select a technology below to filter my featured projects.</p>
             <div class="tech-grid">
                 <a href="#r-projects" class="tech-tile" data-tech="r">
                     <i class="fab fa-r-project"></i>
@@ -87,43 +108,50 @@
         </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section bg-light" style="padding-top: 20px;">
         <div class="container">
-            <h2>Projects</h2>
             
             <div id="r-projects" class="projects-section">
-                <h3>R Projects</h3>
+                <h3>R & Quantitative Research</h3>
                 <div class="projects-grid">
-                    <div class="project">
-                        <div class="project-content">
-                            <h3>The Impact of Social Media on Mental Health in Teens</h3>
-                            <p>Investigated the correlation between social media usage and mental health indicators among teenagers.</p>
-                            <a href="https://github.com/NickWiggz/Projects/blob/main/Social%20Media%20and%20Teens.Rmd" target="_blank">GitHub</a>
-                            <a href="https://rpubs.com/njwiggins/1266054" target="_blank">Rpubs</a>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <div class="project-content">
-                            <h3>The Gateway Effect of Smokeless Tobacco on Adolescents</h3>
-                            <p>Examined whether the use of smokeless tobacco products serves as a predictor for future cigarette smoking among high school students.</p>
-                            <a href="https://github.com/NickWiggz/Projects/blob/main/Smokeless%20Tobacco%20and%20High%20School%20Adolescents.Rmd" target="_blank">GitHub</a>
-                            <a href="https://github.com/NickWiggz/Projects/blob/main/Smokeless%20Tobacco%20and%20High%20School%20Adolescents.pdf" target="_blank">PDF Report</a>
-                        </div>
-                    </div>
                     <div class="project">
                         <div class="project-content">
                             <h3>Addressing Homelessness in Washington, DC</h3>
                             <p>Analyzed socioeconomic and environmental factors contributing to homelessness in Washington, DC using R, Shiny, and Mapbox.</p>
-                            <a href="https://github.com/NickWiggz/Projects/blob/main/Addressing%20DC%20Homelessness.Rmd" target="_blank">GitHub</a>
-                            <a href="https://q1tmzx-nicholas-wiggins.shinyapps.io/Addressing_DC_Homelessness/" target="_blank">Shiny App</a>
+                            <div class="project-links">
+                                <a href="https://github.com/NickWiggz/Projects/blob/main/Addressing%20DC%20Homelessness.Rmd" target="_blank">GitHub</a>
+                                <a href="https://q1tmzx-nicholas-wiggins.shinyapps.io/Addressing_DC_Homelessness/" target="_blank">Shiny App</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-content">
+                            <h3>The Gateway Effect of Smokeless Tobacco</h3>
+                            <p>Examined whether the use of smokeless tobacco products serves as a predictor for future cigarette smoking among high school students.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/NickWiggz/Projects/blob/main/Smokeless%20Tobacco%20and%20High%20School%20Adolescents.Rmd" target="_blank">GitHub</a>
+                                <a href="https://github.com/NickWiggz/Projects/blob/main/Smokeless%20Tobacco%20and%20High%20School%20Adolescents.pdf" target="_blank">PDF Report</a>
+                            </div>
                         </div>
                     </div>
                     <div class="project">
                         <div class="project-content">
                             <h3>US Police Involved Shootings (2015-2023)</h3>
-                            <p>Analyzed and visualized data on police-involved shootings in the US from 2015 to 2023.</p>
-                            <a href="https://github.com/NickWiggz/Projects/blob/main/Data%20Viz%20Police%20Shootings%20Portfolio.Rmd" target="_blank">GitHub</a>
-                            <a href="https://q1tmzx-nicholas-wiggins.shinyapps.io/Portfolio/" target="_blank">Shiny App</a>
+                            <p>Analyzed and visualized data on police-involved shootings in the US from 2015 to 2023 to identify statistical trends.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/NickWiggz/Projects/blob/main/Data%20Viz%20Police%20Shootings%20Portfolio.Rmd" target="_blank">GitHub</a>
+                                <a href="https://q1tmzx-nicholas-wiggins.shinyapps.io/Portfolio/" target="_blank">Shiny App</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-content">
+                            <h3>Impact of Social Media on Mental Health</h3>
+                            <p>Investigated the correlation between social media usage and mental health indicators among teenagers.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/NickWiggz/Projects/blob/main/Social%20Media%20and%20Teens.Rmd" target="_blank">GitHub</a>
+                                <a href="https://rpubs.com/njwiggins/1266054" target="_blank">Rpubs</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -136,20 +164,24 @@
                         <div class="project-content">
                             <h3>Repository Coming Soon</h3>
                             <p>Currently migrating predictive modeling and quantitative analysis projects to this repository.</p>
-                            <a href="https://github.com/NickWiggz" target="_blank">View GitHub Profile</a>
+                            <div class="project-links">
+                                <a href="https://github.com/NickWiggz" target="_blank">View GitHub Profile</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div id="tableau-projects" class="projects-section">
-                <h3>Tableau Projects</h3>
+                <h3>Tableau Dashboards</h3>
                 <div class="projects-grid">
                     <div class="project">
                         <div class="project-content">
-                            <h3>Visit Tableau Public Profile</h3>
+                            <h3>Tableau Public Profile</h3>
                             <p>Explore interactive data visualizations and business intelligence dashboards created using Tableau.</p>
-                            <a href="https://public.tableau.com/app/profile/nicholas.wiggins5304/vizzes" target="_blank">Tableau Public</a>
+                            <div class="project-links">
+                                <a href="https://public.tableau.com/app/profile/nicholas.wiggins5304/vizzes" target="_blank">View Gallery</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -162,14 +194,18 @@
                         <div class="project-content">
                             <h3>Operational Workflow & KPI Dashboard</h3>
                             <p>Re-engineered mission support workflows by developing automated intake forms and a comprehensive financial/operational KPI tracking tool using Power Automate and Power BI.</p>
-                            <a href="#" target="_blank">View Details</a>
+                            <div class="project-links">
+                                <a href="#" target="_blank">View Details</a>
+                            </div>
                         </div>
                     </div>
                     <div class="project">
                         <div class="project-content">
                             <h3>ServiceNow Intake Implementation</h3>
                             <p>Developed and implemented structured service requests in ServiceNow, optimizing agency-wide mission support workflows and reducing processing bottlenecks.</p>
-                            <a href="#" target="_blank">View Details</a>
+                            <div class="project-links">
+                                <a href="#" target="_blank">View Details</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -179,20 +215,20 @@
     </section>
 
     <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me through the following channels:</p>
-            <ul style="list-style: none; padding: 0;">
-                <li>Email: <a href="mailto:NickWiggz1@gmail.com">NickWiggz1@gmail.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/nickwiggz">linkedin.com/in/nickwiggz</a></li>
-                <li>Twitter: <a href="https://twitter.com/NickWiggz">@NickWiggz</a></li>
-            </ul>
+        <div class="container text-center">
+            <h2>Contact Me</h2>
+            <p style="margin-bottom: 20px;">Let's connect to discuss data, policy, or continuous improvement.</p>
+            <div class="social-links">
+                <a href="mailto:NickWiggz1@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://www.linkedin.com/in/nickwiggz" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/NickWiggz" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Nicholas Wiggins | <a href="https://github.com/NickWiggz/Data-Analytics-Portfolio">GitHub Portfolio</a></p>
+            <p>&copy; 2026 Nicholas Wiggins | Data Analytics Portfolio</p>
         </div>
     </footer>
 
