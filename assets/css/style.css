@@ -31,6 +31,9 @@ body {
 
 .bg-light {
     background-color: var(--bg-light);
+    /* Creates a subtle "Data Matrix" dot grid on the background */
+    background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+    background-size: 24px 24px;
 }
 
 .text-center {
@@ -173,21 +176,30 @@ nav a:hover {
 /* --- Resume Grid --- */
 .resume-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    /* Forces exactly 4 columns of equal width */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Slightly tightened gap to fit 4 cards beautifully */
 }
 
 .resume-card {
     background: #ffffff;
-    padding: 30px;
+    /* Reduced padding to ensure text fits inside narrower cards */
+    padding: 25px 15px; 
     border-radius: 8px;
     border: 1px solid var(--border-color);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
     text-align: center;
+    height: 100%;
+    /* Added a slightly stronger shadow so cards pop off the dotted background */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.04);
+    transition: transform 0.2s;
+}
+
+.resume-card:hover {
+    transform: translateY(-5px);
 }
 
 .resume-icon {
-    font-size: 2.5rem;
+    font-size: 2.2rem; /* Slightly smaller icon */
     color: var(--primary-blue);
     margin-bottom: 15px;
 }
@@ -196,6 +208,7 @@ nav a:hover {
     margin-bottom: 20px;
     border-bottom: 2px solid var(--border-color);
     padding-bottom: 10px;
+    font-size: 1.1rem;
 }
 
 .resume-card ul {
@@ -205,13 +218,15 @@ nav a:hover {
 }
 
 .resume-card ul li {
-    margin-bottom: 15px;
-    font-size: 0.95rem;
+    margin-bottom: 12px;
+    font-size: 0.9rem; /* Slightly smaller text for narrow columns */
+    line-height: 1.4;
 }
 
 .resume-card ul li strong {
     color: var(--text-main);
     display: block;
+    margin-bottom: 0.1em;
 }
 
 /* --- Technologies Section (Tiles) --- */
@@ -395,5 +410,20 @@ footer {
     }
     .hero h1 {
         font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    /* Drops to 2-across on iPads and smaller desktop windows */
+    .resume-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Drops to 1-across on cell phones */
+    .resume-grid {
+        grid-template-columns: 1fr;
     }
 }
