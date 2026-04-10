@@ -153,14 +153,28 @@ nav a:hover {
 /* --- About Section --- */
 .profile-pic {
     display: block;
-    margin: 0 auto 30px;
+    margin: 0 auto 40px;
     border-radius: 50%;
-    width: 180px;
-    height: 180px;
+    width: 190px;
+    height: 190px;
     object-fit: cover;
-    border: 4px solid var(--bg-light);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
+    /* Modern Offset Border */
+    border: 4px solid #ffffff;
+    outline: 3px solid var(--primary-blue);
+    outline-offset: 4px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.08);
+    
+    /* Smooth hover animation */
+    transition: transform 0.3s ease, outline-offset 0.3s ease;
 }
+
+/* Expands the blue ring slightly when a user hovers over your photo */
+.profile-pic:hover {
+    transform: scale(1.02);
+    outline-offset: 8px;
+}
+
 
 .about-text {
     max-width: 800px;
@@ -179,6 +193,8 @@ nav a:hover {
     /* Forces exactly 4 columns of equal width */
     grid-template-columns: repeat(4, 1fr);
     gap: 20px; /* Slightly tightened gap to fit 4 cards beautifully */
+    margin-bottom: 60px !important; /* Forces a hard, unbreakable gap below the cards */
+    align-items: stretch; /* Tells the grid to make all cards equal height natively */
 }
 
 .resume-card {
@@ -188,10 +204,12 @@ nav a:hover {
     border-radius: 8px;
     border: 1px solid var(--border-color);
     text-align: center;
-    height: 100%;
+    height: auto !important;
     /* Added a slightly stronger shadow so cards pop off the dotted background */
     box-shadow: 0 10px 20px rgba(0,0,0,0.04);
     transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
 }
 
 .resume-card:hover {
@@ -215,6 +233,7 @@ nav a:hover {
     list-style: none;
     padding: 0;
     text-align: left;
+    flex-grow: 1;
 }
 
 .resume-card ul li {
