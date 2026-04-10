@@ -105,8 +105,8 @@ nav a:hover {
     background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0284c7 100%);
     color: #fff;
     text-align: center;
-    /* Reduced padding: Top is 140px (was 200), Bottom is 80px (was 140) */
-    padding: 140px 0 80px; 
+    /* Reduced padding: Top is 120px (was 200), Bottom is 80px (was 140) */
+    padding: 120px 0 80px; 
     position: relative;
 }
 
