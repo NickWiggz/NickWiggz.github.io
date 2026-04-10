@@ -443,3 +443,45 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* ==========================================================================
+   Light Graffiti / Data Stream Background Effect
+   ========================================================================== */
+
+.data-bg {
+    position: relative;
+    z-index: 1;
+    overflow: hidden; /* Keeps the lines neatly contained within the section */
+}
+/* This draws the intersecting light lines */
+.data-bg::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: -50%; 
+    width: 200%; 
+    height: 100%;
+    
+    /* Layered angled lines using your theme's blue colors at very low opacity */
+    background: 
+        /* Thick, subtle sweeping line */
+        linear-gradient(115deg, transparent 48%, rgba(37, 99, 235, 0.04) 48%, rgba(37, 99, 235, 0.04) 52%, transparent 52%),
+        /* Thin, sharper crossing line */
+        linear-gradient(65deg, transparent 39%, rgba(56, 189, 248, 0.06) 39%, rgba(56, 189, 248, 0.06) 40%, transparent 40%),
+        /* Another thin intersecting line */
+        linear-gradient(145deg, transparent 70%, rgba(37, 99, 235, 0.05) 70%, rgba(37, 99, 235, 0.05) 71%, transparent 71%);
+    
+    background-size: 300px 300px; /* Controls how dense the pattern is */
+    z-index: -1; /* Pushes the lines behind your text and cards */
+    pointer-events: none; /* Ensures the lines don't block you from clicking links */
+}
+
+/* Optional: Add a very slow, subtle drifting animation to the lines */
+.data-bg::before {
+    animation: drift 60s linear infinite;
+}
+
+@keyframes drift {
+    0% { transform: translateY(0) translateX(0); }
+    100% { transform: translateY(-100px) translateX(-100px); }
+}
