@@ -393,7 +393,6 @@ nav a:hover {
     display: flex;
     gap: 10px; /* Spaces the buttons evenly */
     flex-wrap: wrap; /* Ensures buttons don't break the card on small screens */
-    padding-top: 15px; /* Adds breathing room between text and buttons */
 }
 
 .project a {
