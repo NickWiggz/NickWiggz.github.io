@@ -379,21 +379,35 @@ nav a:hover {
     flex-grow: 1; 
 }
 
+/* --- Upgraded Project Links (Pill Buttons) --- */
 .project-links {
-    margin-top: auto; 
+    margin-top: auto; /* Pushes the buttons to the bottom of the card */
+    display: flex;
+    gap: 10px; /* Spaces the buttons evenly */
+    flex-wrap: wrap; /* Ensures buttons don't break the card on small screens */
+    padding-top: 15px; /* Adds breathing room between text and buttons */
 }
 
 .project a {
     display: inline-block;
-    margin-right: 15px;
+    margin: 0; 
+    padding: 8px 16px;
+    background-color: var(--bg-light);
     color: var(--primary-blue);
-    text-decoration: none;
+    border: 1px solid var(--border-color);
+    border-radius: 50px; /* Creates the sleek "pill" shape */
+    font-size: 0.85rem;
     font-weight: 600;
-    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
 }
 
 .project a:hover {
-    text-decoration: underline;
+    background-color: var(--primary-blue);
+    color: #ffffff !important;
+    border-color: var(--primary-blue);
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
 }
 
 /* --- Social / Contact --- */
