@@ -392,10 +392,8 @@ nav a:hover {
     margin-top: auto; /* Pushes the buttons to the bottom of the card */
     display: flex;
     gap: 10px; /* Spaces the buttons evenly */
-    flex-wrap: nowrap; /* Ensures buttons don't break the card on small screens */
+    flex-wrap: wrap; /* Ensures buttons don't break the card on small screens */
     padding-top: 35px; /* Adds breathing room between text and buttons */
-    justify-content: center; 
-    width: 100%;
 }
 
 .project a {
