@@ -178,29 +178,28 @@ nav a:hover {
 }
 
 /* --- Clean, Floating Profile Photo (No Rings, No Borders) --- */
+/* --- Floating Blend Profile Photo --- */
 .profile-pic {
     display: block;
     margin: 0 auto 40px;
-    border-radius: 24px; /* Soft, modern rounded corners */
+    border-radius: 20px; /* Soft, organic corners */
     width: 280px; 
     height: 280px; 
     object-fit: cover;
     
-    /* Force removal of all borders, rings, and masks */
-    border: none !important; 
-    outline: none !important;
-    -webkit-mask-image: none !important; 
-    mask-image: none !important;
+    /* Remove all harsh lines */
+    border: none; 
+    outline: none;
     
-    /* Ultra-soft, natural drop shadow for depth */
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08); 
+    /* Ultra-soft, diffused shadow for a seamless float */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.05); 
     
     transition: transform 0.4s ease, box-shadow 0.4s ease; 
 }
 
 .profile-pic:hover {
-    transform: translateY(-5px) scale(1.02); /* Floats up smoothly */
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12); /* Shadow deepens on hover */
+    transform: translateY(-5px) scale(1.02); /* Floats up slightly on hover */
+    box-shadow: 0 35px 60px rgba(0, 0, 0, 0.08); 
 }
 
 /* --- About Text --- */
