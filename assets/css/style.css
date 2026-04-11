@@ -131,10 +131,10 @@ nav a:hover {
 
 /* --- Hero Section --- */
 .hero {
-    background: linear-gradient(135deg, #1e40af 0%, #2563eb 50%, #38bdf8 100%) !important;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0284c7 100%) !important;
     color: #fff;
     text-align: center;
-    padding: 140px 0 80px !important; 
+    padding: 120px 0 80px !important; 
     position: relative;
 }
 
