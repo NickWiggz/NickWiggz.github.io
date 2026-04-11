@@ -178,27 +178,28 @@ nav a:hover {
 }
 
 /* --- Seamless Fade Profile Photo --- */
+/* --- Floating Blend Profile Photo --- */
 .profile-pic {
     display: block;
     margin: 0 auto 40px;
+    border-radius: 20px; /* Soft, organic corners */
     width: 280px; 
     height: 280px; 
     object-fit: cover;
     
-    /* Remove all harsh lines and shadows */
+    /* Remove all harsh lines */
     border: none; 
     outline: none;
-    box-shadow: none;
     
-    /* The Magic: Fades the edges of the image into the background */
-    -webkit-mask-image: radial-gradient(circle, black 50%, transparent 100%);
-    mask-image: radial-gradient(circle, black 50%, transparent 100%);
+    /* Ultra-soft, diffused shadow for a seamless float */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.05); 
     
-    transition: transform 0.4s ease; 
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
 }
 
 .profile-pic:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    transform: translateY(-5px) scale(1.02); /* Floats up slightly on hover */
+    box-shadow: 0 35px 60px rgba(0, 0, 0, 0.08); 
 }
 
 /* --- About Text --- */
